@@ -101,6 +101,12 @@ class NerfModel(nn.Module):
         
         return Sonar, Camera
         
+        
+        
+        
+        
+        
+        
         # tmp = self.block2(torch.cat((h, emb_x), dim=1))
         # h, sigma = tmp[:, :-1], self.relu(tmp[:, -1])
         # h = self.block3(torch.cat((h, emb_d), dim=1))
