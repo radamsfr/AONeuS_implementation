@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+ 
 
 def render_rays(nerf_model, ray_origins, ray_directions, hn=0, hf=0.5, nb_bins=192):
     device = ray_origins.device
@@ -172,3 +173,5 @@ if __name__ == 'main':
     data_loader = DataLoader(training_dataset, batch_size=1024, shuffle=True)
     train(model, model_optimizer, scheduler, data_loader, nb_epochs=16, device=device, hn=2, hf=6, nb_bins=192, H=400,
           W=400)
+          
+          
